@@ -1,0 +1,27 @@
+server:
+  servlet:
+    encoding:
+      charset: utf-8
+      force: true
+    session:
+      tracking-modes: COOKIE
+      timeout: 30m
+  port: 8080
+
+spring:
+  mustache:
+    servlet:
+      expose-session-attributes: true
+      expose-request-attributes: true
+
+  web:
+    resources:
+      static-locations: file:./images/
+
+book:
+  api:
+    key: cea3b7feddeb588bb1faf97cd896734477a4f2a0c17ef17a49efc65fa23f8008
+
+
+file:
+  upload-dir: ./uploads
